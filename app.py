@@ -17,7 +17,7 @@ if not api_key:
 
 client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
 
-MODEL = " gpt-4o-mini"  # Replace with your desired model   
+MODEL = "gpt-4o-mini"  # Replace with your desired model   
 
 # --- 3. System prompt: an f-string gluing role + policy + rules ------------
 POLICY = (Path(__file__).parent / "hopscotch_policy.md").read_text(encoding="utf-8")
